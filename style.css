@@ -1,0 +1,242 @@
+/* CSS para a página de agenda escolar */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe3e3;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    color: #333;
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container h1 {
+    text-align: center;
+    color: #b30000; /* Vermelho escuro */
+    margin-bottom: 20px;
+}
+
+#informacoes-aluno {
+    display: none;
+    margin-top: 20px;
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+
+#informacoes-aluno ul {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+#form-agendamento {
+    display: none;
+    margin-top: 20px;
+}
+
+#form-agendamento label {
+    display: block;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: #333;
+}
+
+#form-agendamento input[type="date"],
+#form-agendamento input[type="time"],
+#form-agendamento textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+#form-agendamento textarea {
+    resize: none; /* Impede o redimensionamento */
+}
+
+#form-agendamento button {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #b30000; /* Vermelho escuro */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#form-agendamento button:hover {
+    background-color: #800000; /* Vermelho mais escuro (hover) */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b30000;
+    padding: 10px 20px;
+    color: white;
+
+}
+.logoM img {
+        height: 200px;
+        width: 230px;
+        margin-left: 20px;
+}    
+.registration-form {
+    display: flex;
+    align-items: center;
+}
+.registration-form input {
+    margin-left: 10px;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+}
+.registration-form input[type="submit"] {
+            background-color: #fff;
+            color: #af4c4c;
+            cursor: pointer;
+            transition: background-color 0.3s;
+}
+.registration-form input[type="submit"]:hover {
+            background-color: #ddd;
+}
+        
+nav{
+    position: absolute;
+    top: 110px;
+    right: 50px;
+}
+nav li{
+    display: inline;
+    margin: 0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase;
+    color: #ffffff;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: none;
+}
+nav a:hover{
+    color: #c71919;
+    text-decoration: underline;
+}
+
+#calendar-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+}
+
+#calendar-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#calendar-month-year {
+    margin: 0;
+}
+h1 {
+    color: #333;
+    text-align: center;
+}
+.calendario {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.calendario th,
+.calendario td {
+    border: 1px solid #acacac;
+    padding: 10px;
+    text-align: center;
+}
+
+.calendario th {
+    background-color: #333;
+    color: white;
+}
+
+.calendario td {
+    height: 50px;
+    background-color: #f2f2f2;
+}
+
+.calendario td:not(:empty) {
+    background-color: #ffcccc;
+    color: #333;
+    font-weight: bold;
+}
+
+.calendario td:hover {
+    background-color: #ff9999;
+    color: #000;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    display: flex;
+    flex-direction: column;
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close-button:hover,
+.close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+#mes-anterior {
+    background-image: Linear-gradient(45deg, #ff8800, #e9bc2a);
+    padding: 0,5px 0,5px;
+    font-size: 24px;
+    color: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#proximo-mes{
+   background-image: Linear-gradient(45deg, #ff8800, #e9bc2a);
+    padding: 0,5px 0,5px;
+    font-size: 24px;
+    color: none;
+    border-radius: 10px;
+    cursor: pointer;
+}

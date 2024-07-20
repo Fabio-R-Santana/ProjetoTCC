@@ -14,8 +14,8 @@
             <nav>
                 <ul>
                     <li> <a href="index.html"> Home </a></li>
-                    <li> <a href="Fornulario.php"> Cadastro </a></li>
-                    <li> <a> Calendário </a></li>
+                    <li> <a href="Formulario.php"> Cadastro </a></li>
+                    <li> <a href="index.php"> Calendário </a></li>
                 </ul>
             </nav>  
         </div>

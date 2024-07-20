@@ -90,7 +90,7 @@ header {
 }
 .logoM img {
         height: 200px;
-        width: 230px;
+        width: 240px;
         margin-left: 20px;
 }    
 .registration-form {
@@ -207,13 +207,13 @@ h1 {
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 50%;
 }
 
 .close-button {
     color: #aaa;
     float: right;
-    font-size: 28px;
+    font-size: 30px;
     font-weight: bold;
 }
 

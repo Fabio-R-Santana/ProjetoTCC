@@ -64,9 +64,9 @@
         <img src="IMGmontask.jpeg" alt="Logo do Site">
           <nav>
               <ul>
-                <li> <a href="index.html"> Home </a></li>
-                <li> <a href="Fornulario.html"> Cadastro </a></li>
-                <li> <a> Turma </a></li>
+                <li> <a href="index.php"> Home </a></li>
+                <li> <a href="Formulario.php"> Cadastro </a></li>
+                <li> <a href="index.php"> Calendário </a></li>
               </ul>
           </nav>  
       

@@ -1,0 +1,117 @@
+.container_homepage {
+    max-width: 1050px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+.container_homepage h1 {
+    text-align: center;
+    color: #b30000; /* Vermelho escuro */
+    margin-bottom: 20px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.conteudo_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    height: 100%;
+    max-width: 1050px;
+}
+
+.section {
+    flex: 1;
+    padding: 20px;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+h2{
+    color: #b30000;
+}
+.container_descricao {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.container_descricao .conteudo_container_descricao {
+    flex: 1;
+    padding-right: 20px; /* Espaçamento entre o conteúdo e a imagem */
+}
+
+.container_descricao .imagem_container_descricao img {
+    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    height: auto; /* Mantém a proporção da imagem */
+}
+#noResult {
+    margin-top: 20px;
+    text-align: end;
+}
+/* Estilos para o botão "Voltar para a Homepage" */
+button#voltarParaHome {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button#voltarParaHome:hover {
+    background-color: #8c0000;
+}
+
+/* Estilos para o menu de busca */
+#searchMenu {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#searchMenu label {
+    font-size: 16px;
+    font-weight: bold;
+    color: #555;
+}
+
+#searchInput {
+    padding: 10px;
+    margin-top: 5px;
+    width: 300px;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    font-size: 14px;
+}
+
+#searchInput:focus {
+    outline: none;
+    border-color: #b30000;
+}
+
+button#buscar {
+    background-color: #b30000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button#buscar:hover {
+    background-color: #8c0000;
+}

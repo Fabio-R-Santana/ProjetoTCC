@@ -13,9 +13,9 @@
         <img src="IMGmontask.jpeg" alt="Logo do Site">
           <nav>
               <ul>
-                <li> <a href="index.php"> Home </a></li>
-                <li> <a href="Formulario.php"> Cadastro </a></li>
-                <li> <a href="index.php"> Calendário </a></li>
+                  <li> <a href="index.php"> Calendário </a></li>
+                  <li> <a href="Formulario.php"> Login </a></li>
+                  <li> <a href="Home.php"> Home </a></li>
               </ul>
           </nav>  
       

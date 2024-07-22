@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <title>MonTask</title>
 </head>
 <body>
@@ -13,9 +14,9 @@
             <img src="IMGmontask.jpeg" alt="Logo do Site">
             <nav>
                 <ul>
-                    <li> <a href="index.html"> Calendário </a></li>
-                    <li> <a href="Fornulario.html"> Login </a></li>
-                    <li> <a href="Home.html"> Home </a></li>
+                    <li> <a href="index.php"> Calendário </a></li>
+                    <li> <a href="Formulario.php"> Login </a></li>
+                    <li> <a href="Home.php"> Home </a></li>
                 </ul>
             </nav>  
         </div>

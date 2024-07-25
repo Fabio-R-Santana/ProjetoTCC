@@ -60,7 +60,7 @@
 
     <div class="container_descricao">
         <div class="conteudo_container_descricao">
-            <h2>Quem Nós Somos?</h2>
+            <h2>Quem nós somos?</h2>
             <p>Nosso site é uma plataforma inovadora projetada por estudantes para facilitar a organização e gestão de tarefas escolares. Com um foco claro em melhorar a eficiência tanto para professores quanto para alunos, oferecemos uma solução intuitiva e poderosa para acompanhar e completar as tarefas de sala de aula de maneira eficaz.</p>
             <ul>
                 <h2>Recursos Principais</h2>

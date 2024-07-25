@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Calendario.css">
     <title>MonTask</title>
 </head>
 <body>
@@ -237,6 +238,32 @@
             generateCalendar(currentMonth, currentYear);
         });
     </script>
+
+<div class="container">
+        <h1>Calendário</h1> <!-- Título principal da página -->
+        <div class="cabecalho-calendario">
+            <button id="mesAnterior">&#10094;</button> <!-- Botão para o mês anterior com um ícone de seta -->
+            <h2 id="mesAno"></h2> <!-- Título que exibirá o mês e o ano atual -->
+            <button id="proximoMes">&#10095;</button> <!-- Botão para o próximo mês com um ícone de seta -->
+            <button id="botaoNovoEvento">Novo Evento</button> <!-- Botão para adicionar um novo evento -->
+        </div>
+        <div class="grid-calendario" id="calendarioGrid"></div> <!-- Div que conterá a grade do calendário -->
+        <div class="detalhes-evento" id="detalhesEvento"></div> <!-- Div que mostrará os detalhes de um evento selecionado -->
+        <div class="formulario-evento" id="formularioEvento">
+            <h3>Criar Novo Evento</h3> 
+            <form>
+                <label for="titulo">Título:</label>
+                <input type="text" id="titulo" name="titulo"><br><br> <!-- Campo para inserir o título do evento -->
+                <label for="data">Data:</label>
+                <input type="date" id="data" name="data"><br><br> <!-- Campo para inserir a data do evento -->
+                <label for="descricao">Descrição:</label>
+                <textarea id="descricao" name="descricao"></textarea><br><br> <!-- Campo para inserir a descrição do evento -->
+                <button type="submit">Criar Evento</button> <!-- Botão para submeter o formulário e criar o evento -->
+            </form>
+        </div>
+    </div>
+
+    <script src="Calendario.js"></script> <!-- Inclusão do arquivo de script JavaScript -->
 
 </body>
 </html>

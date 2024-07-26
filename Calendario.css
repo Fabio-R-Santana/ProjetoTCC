@@ -49,7 +49,7 @@ h1 {
 }
 
 .dia.hoje {
-    background-color: #f0f0f0; /* Define a cor de fundo para o dia atual */
+    background-color: #75fa57; /* Define a cor de fundo para o dia atual */
 }
 
 .dia.evento {
@@ -79,13 +79,13 @@ h1 {
 
 .formulario-evento input, .formulario-evento textarea {
     padding: 8px; /* Adiciona preenchimento interno aos campos de entrada */
-    border: 1px solid #ddd; /* Adiciona uma borda sólida com cor cinza claro aos campos de entrada */
+    border: 1px solid #dddddd; /* Adiciona uma borda sólida com cor cinza claro aos campos de entrada */
     border-radius: 4px; /* Arredonda as bordas dos campos de entrada */
-    width: 100%; /* Define a largura dos campos de entrada como 100% */
+    width: 98%; /* Define a largura dos campos de entrada como 100% */
 }
 
 .formulario-evento button[type="submit"] {
-    background-color: #4CAF50; /* Define a cor de fundo do botão de envio */
+    background-color: #d75252; /* Define a cor de fundo do botão de envio */
     color: #fff; /* Define a cor do texto do botão de envio */
     padding: 8px 12px; /* Adiciona preenchimento interno ao botão de envio */
     border: none; /* Remove a borda do botão de envio */

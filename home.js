@@ -50,5 +50,5 @@ function buscarInformacoes() {
 }
 
 function voltarParaHomepage() {
-    window.location.href = "Home.php"; // Redireciona para a homepage
+    window.location.href = "Index.php"; // Redireciona para a homepage
 }

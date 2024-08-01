@@ -11,7 +11,7 @@
 
     <header>
         <div class="logoM">
-            <img src="IMGmontask.jpeg" alt="Logo do Site">
+            <img src="IMGmontask.png" alt="Logo do Site">
             <nav>
                 <ul>
                     <li> <a href="Calendario.php"> Calendário </a></li>

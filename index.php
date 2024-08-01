@@ -11,7 +11,7 @@
 
     <header>
         <div class="logoM">
-            <img src="IMGmontask.jpeg" alt="Logo do Site">
+            <img src="IMGmontask.png" alt="Logo do Site">
             <nav>
                 <ul>
                     <li> <a href="Calendario.php"> Calendário </a></li>
@@ -24,7 +24,7 @@
     <main>
         <div class="container_homepage">
             <div class="conteudo_container">
-            <img src="imagemhomepage.png" alt="img_home" id="img_home">
+            <img src="imagemhomepage.png" alt="img_home" id="img_home" class="IMGhomepage">
             <h1>Pagina Inicial</h1>
             <div id="searchMenu">
                 <label for="searchInput">Buscar informações:</label>
@@ -70,7 +70,7 @@
             </ul>
          </div>
         <div class="imagem_container_descricao">
-            <img src="IMGmontask.jpeg" alt="" srcset="">
+            <img src="IMGmontask.png" alt="" srcset="">
         </div>
     </div>
 </body>

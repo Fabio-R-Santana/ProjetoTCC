@@ -10,7 +10,7 @@
 <body>
   <header>
     <div class="logoM">
-        <img src="IMGmontask.jpeg" alt="Logo do Site">
+        <img src="IMGmontask.png" alt="Logo do Site">
           <nav>
               <ul>
                   <li> <a href="Calendario.php"> Calendário </a></li>
@@ -23,7 +23,7 @@
     
   </header>
   <div class="container">
-    <img class="logo" src="IMGmontask.jpeg" alt="Logo da Escola">
+    <img class="logo" src="IMGmontask.png" alt="Logo da Escola">
     <h2>Formulário de Cadastro</h2>
 
     <div id="select-type" class="form-group">

@@ -24,18 +24,18 @@
     <main>
         <div class="container_homepage">
             <div class="conteudo_container">
-            <img src="imagemhomepage.png" alt="img_home" id="img_home" class="IMGhomepage">
-            <h1>Pagina Inicial</h1>
-            <div id="searchMenu">
-                <label for="searchInput">Buscar informações:</label>
-                <input type="text" id="searchInput" placeholder="Digite aqui...">
-                <button onclick="buscarInformacoes()">Buscar</button>
+                <img src="imagemhomepage.png" alt="img_home" id="img_home" class="IMGhomepage">
+                <h1>Pagina Inicial</h1>
+                <div id="searchMenu">
+                    <label for="searchInput">Buscar informações:</label>
+                    <input type="text" id="searchInput" placeholder="Digite aqui...">
+                    <button onclick="buscarInformacoes()">Buscar</button>
+                </div>
+                <div id="noResult" style="display: none;">
+                    <p>Nenhum resultado encontrado.</p>
+                </div>
+                <button onclick="voltarParaHomepage()">Voltar para a Homepage</button>
             </div>
-            <div id="noResult" style="display: none;">
-                <p>Nenhum resultado encontrado.</p>
-            </div>
-            <button onclick="voltarParaHomepage()">Voltar para a Homepage</button>
-        </div>
         </div>
     </main>
     <div class="container">

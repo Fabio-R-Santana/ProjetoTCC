@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: Arial, sans-serif; 
     margin: 0;
     padding: 0;
     background-color: #ffe3e3;
@@ -62,7 +62,7 @@ h2{
 }
 
 .container_descricao .imagem_container_descricao img {
-    max-width: 100%; /* Garante que a imagem não ultrapasse o tamanho do container */
+    max-width: 350px; /* Garante que a imagem não ultrapasse o tamanho do container */
     height: auto; /* Mantém a proporção da imagem */
 }
 #noResult {

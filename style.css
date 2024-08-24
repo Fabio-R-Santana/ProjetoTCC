@@ -89,9 +89,9 @@ header {
 
 }
 .logoM img {
-        height: 200px;
-        width: 250px;
-        margin-left: 20px;
+    height: 200px;
+    width: 220px;
+    margin-left: 20px;
 }    
 .registration-form {
     display: flex;

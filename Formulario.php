@@ -23,7 +23,7 @@
     
   </header>
   <div class="container">
-    <img class="logo" src="IMGmontask.png" alt="Logo da Escola">
+    <img class="logo" src="MontaskLOGO2.png" alt="Logo da Escola">
     <h2>Formulário de Cadastro</h2>
 
     <div id="select-type" class="form-group">

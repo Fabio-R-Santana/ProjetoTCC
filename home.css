@@ -1,3 +1,12 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffe3e3;
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
+    color: #333;
+    box-sizing: border-box;
+}
 .container_homepage {
     max-width: 1050px;
     margin: 50px auto;

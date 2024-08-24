@@ -1,94 +1,150 @@
+/* Estilos gerais para o corpo */
 body {
-    font-family: sans-serif; /* Define a fonte padrão para o corpo do documento */
-    margin: 0; /* Remove margens externas */
-    padding: 0; /* Remove preenchimentos externos */
-    background-color: #f4f4f4; /* Define a cor de fundo para todo o corpo do documento */
+    font-family: sans-serif; /* Fonte padrão */
+    margin: 0; /* Remove a margem padrão */
+    padding: 0; /* Remove o padding padrão */
+    background-color: #ffe3e3;; /* Cor de fundo do corpo */
 }
 
+/* Estilo para o container principal */
 .container {
-    width: 80%; /* Define a largura do container principal */
-    margin: 20px auto; /* Centraliza o container na página e aplica margens verticais */
-    background-color: #fff; /* Define a cor de fundo do container */
-    padding: 20px; /* Adiciona preenchimento interno ao container */
-    border-radius: 8px; /* Arredonda as bordas do container */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Adiciona sombra ao container */
+    width: 100%; /* Largura do container */
+    max-width: 1050px; /* Largura maxima do container */
+    margin: 20px auto; /* Margem superior/inferior e centraliza horizontalmente */
+    background-color: #fff; /* Cor de fundo do container */
+    padding: 20px; /* Padding interno */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do container */
 }
 
+/* Estilo para o título principal */
 h1 {
-    text-align: center; /* Centraliza o texto do cabeçalho */
-    margin-bottom: 20px; /* Adiciona margem inferior ao cabeçalho */
+    text-align: center; /* Alinhamento do texto */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
+/* Estilo para o cabeçalho do calendário */
 .cabecalho-calendario {
-    display: flex; /* Usa o modelo de layout flexível */
-    justify-content: space-between; /* Distribui os itens com espaçamento igual entre eles */
-    align-items: center; /* Centraliza verticalmente os itens */
-    margin-bottom: 20px; /* Adiciona margem inferior ao cabeçalho do calendário */
+    display: flex; /* Exibição flexível */
+    justify-content: space-between; /* Espaçamento entre itens */
+    align-items: center; /* Alinhamento vertical dos itens */
+    margin-bottom: 20px; /* Margem inferior */
 }
 
+/* Estilo para os botões no cabeçalho do calendário */
 .cabecalho-calendario button {
-    background-color: #ddd; /* Define a cor de fundo dos botões do cabeçalho */
-    border: none; /* Remove a borda dos botões */
-    padding: 8px 12px; /* Adiciona preenchimento interno aos botões */
-    border-radius: 4px; /* Arredonda as bordas dos botões */
-    cursor: pointer; /* Transforma o cursor em uma mão ao passar sobre os botões */
+    background-color: #ddd; /* Cor de fundo */
+    border: none; /* Remove a borda padrão */
+    padding: 8px 12px; /* Padding interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer para indicar ação */
 }
 
+/* Estilo para a área principal de conteúdo */
+.main-content {
+    display: flex; /* Exibição flexível */
+    gap: 20px; /* Espaçamento entre os itens */
+}
+
+/* Estilo para a grade do calendário */
 .grid-calendario {
-    display: grid; /* Usa o modelo de layout de grid */
-    grid-template-columns: repeat(7, 1fr); /* Define 7 colunas iguais */
-    gap: 10px; /* Define o espaçamento entre as células do grid */
+    display: grid; /* Exibição em grid */
+    grid-template-columns: repeat(7, 1fr); /* Define 7 colunas de largura igual */
+    gap: 10px; /* Espaçamento entre as células */
+    flex: 2; /* Flexibilidade para o calendário */
 }
 
+/* Estilo para os dias no calendário */
 .dia {
-    padding: 10px; /* Adiciona preenchimento interno aos dias do calendário */
-    text-align: center; /* Centraliza o texto dos dias */
-    border: 1px solid #ddd; /* Adiciona uma borda sólida com cor cinza claro */
-    border-radius: 4px; /* Arredonda as bordas dos dias */
-    cursor: pointer; /* Transforma o cursor em uma mão ao passar sobre os dias */
+    padding: 10px; /* Padding interno */
+    text-align: center; /* Alinhamento do texto */
+    border: 1px solid #ddd; /* Borda ao redor */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer para indicar ação */
 }
 
+/* Estilo para o dia atual */
 .dia.hoje {
-    background-color: #75fa57; /* Define a cor de fundo para o dia atual */
+    background-color: #f0f0f0; /* Cor de fundo para o dia atual */
 }
 
+/* Estilo para o dia com evento */
 .dia.evento {
-    background-color: #da5d47; /* Define a cor de fundo para os dias com eventos */
+    background-color: #da5d47; /* Cor de fundo para dias com eventos */
 }
 
+/* Estilo para o mural de eventos */
+.mural-eventos {
+    flex: 1; /* Flexibilidade para o mural de eventos */
+    background-color: #f0f0f0; /* Cor de fundo */
+    padding: 10px; /* Padding interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do mural */
+    max-height: 600px; /* Altura máxima */
+    overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
+}
+
+/* Estilo para cada item de evento no mural */
+.mural-eventos .evento-item {
+    margin-bottom: 10px; /* Margem inferior */
+    padding: 10px; /* Padding interno */
+    background-color: #fff; /* Cor de fundo do item de evento */
+    border: 1px solid #ddd; /* Borda ao redor */
+    border-radius: 4px; /* Bordas arredondadas */
+}
+
+/* Estilo para botões dentro dos itens de evento no mural */
+.mural-eventos .evento-item button {
+    background-color: #da5d47; /* Cor de fundo dos botões */
+    color: #fff; /* Cor do texto */
+    border: none; /* Remove a borda padrão */
+    padding: 5px 10px; /* Padding interno */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer para indicar ação */
+}
+
+/* Estilo para o botão de editar no item de evento */
+.mural-eventos .evento-item button.edit {
+    background-color: #4CAF50; /* Cor de fundo do botão de editar */
+}
+
+/* Estilo para o elemento de detalhes do evento */
 .detalhes-evento {
-    margin-top: 10px; /* Adiciona margem superior aos detalhes do evento */
-    padding: 8px; /* Adiciona preenchimento interno aos detalhes do evento */
-    background-color: #f0f0f0; /* Define a cor de fundo dos detalhes do evento */
-    border-radius: 4px; /* Arredonda as bordas dos detalhes do evento */
+    margin-top: 10px; /* Margem superior */
+    padding: 8px; /* Padding interno */
+    background-color: #f0f0f0; /* Cor de fundo */
+    border-radius: 4px; /* Bordas arredondadas */
 }
 
-/* Estilo adicionado para o formulário de criação de eventos */
+/* Estilo para o formulário de eventos */
 .formulario-evento {
-    margin-top: 20px; /* Adiciona margem superior ao formulário de criação de eventos */
-    padding: 10px; /* Adiciona preenchimento interno ao formulário de criação de eventos */
-    border: 1px solid #ddd; /* Adiciona uma borda sólida com cor cinza claro */
-    border-radius: 4px; /* Arredonda as bordas do formulário de criação de eventos */
-    background-color: #f0f0f0; /* Define a cor de fundo do formulário de criação de eventos */
+    margin-top: 20px; /* Margem superior */
+    padding: 10px; /* Padding interno */
+    border: 1px solid #ddd; /* Borda ao redor */
+    border-radius: 4px; /* Bordas arredondadas */
+    background-color: #f0f0f0; /* Cor de fundo */
 }
 
+/* Estilo para os rótulos dentro do formulário */
 .formulario-evento label {
-    display: block; /* Define as labels como blocos para ficarem em linhas separadas */
-    margin-bottom: 10px; /* Adiciona margem inferior às labels */
+    display: block; /* Exibição em bloco */
+    margin-bottom: 10px; /* Margem inferior */
 }
 
+/* Estilo para inputs e textareas dentro do formulário */
 .formulario-evento input, .formulario-evento textarea {
-    padding: 8px; /* Adiciona preenchimento interno aos campos de entrada */
-    border: 1px solid #dddddd; /* Adiciona uma borda sólida com cor cinza claro aos campos de entrada */
-    border-radius: 4px; /* Arredonda as bordas dos campos de entrada */
-    width: 98%; /* Define a largura dos campos de entrada como 100% */
+    padding: 8px; /* Padding interno */
+    border: 1px solid #ddd; /* Borda ao redor */
+    border-radius: 4px; /* Bordas arredondadas */
+    width: 98%; /* Largura total do elemento */
 }
 
+/* Estilo para o botão de submit no formulário */
 .formulario-evento button[type="submit"] {
-    background-color: #d75252; /* Define a cor de fundo do botão de envio */
-    color: #fff; /* Define a cor do texto do botão de envio */
-    padding: 8px 12px; /* Adiciona preenchimento interno ao botão de envio */
-    border: none; /* Remove a borda do botão de envio */
-    border-radius: 4px; /* Arredonda as bordas do botão de envio */
-    cursor: pointer; /* Transforma o cursor em uma mão ao passar sobre o botão de envio */
+    background-color: #4CAF50; /* Cor de fundo */
+    color: #fff; /* Cor do texto */
+    padding: 8px 12px; /* Padding interno */
+    border: none; /* Remove a borda padrão */
+    border-radius: 4px; /* Bordas arredondadas */
+    cursor: pointer; /* Cursor de pointer para indicar ação */
 }

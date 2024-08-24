@@ -18,7 +18,7 @@
                     <li> <a href="Formulario.php"> Login </a></li>
                     <li> <a href="index.php"> Home </a></li>
                 </ul>
-            </nav>  
+            </nav>
         </div>
     </header>
     <main>
@@ -29,12 +29,12 @@
                 <div id="searchMenu">
                     <label for="searchInput">Buscar informações:</label>
                     <input type="text" id="searchInput" placeholder="Digite aqui...">
-                    <button onclick="buscarInformacoes()">Buscar</button>
+                    <button onclick="buscarInformacoes()" id="buscar">Buscar</button>
                 </div>
-                <div id="noResult" style="display: none;">
+                <div id="noResult" class="hidden">
                     <p>Nenhum resultado encontrado.</p>
                 </div>
-                <button onclick="voltarParaHomepage()">Voltar para a Homepage</button>
+                <button onclick="voltarParaHomepage()" id="voltarParaHome">Voltar para a Homepage</button>
             </div>
         </div>
     </main>
@@ -58,8 +58,8 @@
 
     <script src="home.js"></script>
 
-    <div class="container_descricao">
-        <div class="conteudo_container_descricao">
+    <section class="container_descricao">
+        <section class="conteudo_container_descricao">
             <h2>Quem nós somos?</h2>
             <p>Nosso site é uma plataforma inovadora projetada por estudantes para facilitar a organização e gestão de tarefas escolares. Com um foco claro em melhorar a eficiência tanto para professores quanto para alunos, oferecemos uma solução intuitiva e poderosa para acompanhar e completar as tarefas de sala de aula de maneira eficaz.</p>
             <ul>
@@ -68,11 +68,11 @@
                 <br>
                 <li>Notificações e Lembretes: Mantenha-se atualizado com notificações instantâneas sobre novas tarefas atribuídas, prazos iminentes e atualizações importantes. Nunca mais perca um prazo importante ou esqueça de uma tarefa essencial.</li>
             </ul>
-         </div>
-        <div class="imagem_container_descricao">
+        </section>
+        <section class="imagem_container_descricao">
             <img src="MontaskLOGO2.png" alt="" srcset="">
-        </div>
-    </div>
+        </section>
+    </section>
 </body>
 </body>
 </html>

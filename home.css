@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif; 
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #ffe3e3;
@@ -65,9 +65,16 @@ h2{
     max-width: 350px; /* Garante que a imagem não ultrapasse o tamanho do container */
     height: auto; /* Mantém a proporção da imagem */
 }
+#voltarParaHome {
+    margin-bottom: 20px; /* Adiciona espaço abaixo do botão para separar da mensagem de nenhum resultado */
+}
+
 #noResult {
-    margin-top: 20px;
-    text-align: end;
+    margin-top: 10px; /* Adiciona espaço acima da mensagem para separá-la do botão */
+    text-align: center; /* Centraliza o texto da mensagem */
+}
+.hidden {
+    display: none;
 }
 /* Estilos para o botão "Voltar para a Homepage" */
 button#voltarParaHome {

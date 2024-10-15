@@ -11,14 +11,15 @@
 
     <header>
         <div class="logoM">
-            <img src="IMGmontask.png" alt="Logo do Site">
+            <img src="MontaskLOGO2.png" alt="Logo do Site">
             <nav>
                 <ul>
                     <li> <a href="Calendario.php"> Calendário </a></li>
                     <li> <a href="Formulario.php"> Login </a></li>
                     <li> <a href="index.php"> Home </a></li>
+                    <li> <a href="perfil.phtml"> Perfil </a></li>
                 </ul>
-            </nav>  
+            </nav>
         </div>
     </header>
 

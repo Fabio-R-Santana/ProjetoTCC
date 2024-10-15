@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="perfilCSS.css">
+    <title>Perfil do Usuário</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
+    <!-- Link para a fonte "Open Sans" hospedada no Google Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <!-- Link para a biblioteca de ícones Font Awesome -->
+</head>
+<body>
+    <div class="container">
+    <!-- Inicia uma <div> com a classe "container" para estruturar o layout -->
+
+        <h2>Perfil do Usuário</h2>
+
+        <!-- Inicia uma <div> com a classe "imagem-perfil" para a seção da imagem de perfil -->
+        <div class="imagem-perfil">
+        <img id="imagem-perfil" src="https://via.placeholder.com/150" alt="Imagem do Perfil">
+            <!-- Adiciona uma imagem com o ID "imagem-perfil", usando um URL de placeholder -->
+        </div>
+
+
+        <!-- Inicia uma <div> com a classe "icone-editar" e ID "editar-imagem" para o ícone de edição -->
+        <div class="icone-editar" id="editar-imagem">
+        <i class="fas fa-pencil-alt"></i>
+            <!-- Adiciona um ícone de lápis (editar) usando a biblioteca Font Awesome -->
+        </div>
+
+
+        <!-- Inicia uma <div> com a classe "icone-excluir" e ID "excluir-imagem" para o ícone de exclusão -->
+        <div class="icone-excluir" id="excluir-imagem">
+        <i class="fas fa-times"></i>
+            <!-- Adiciona um ícone de "x" (excluir) usando a biblioteca Font Awesome -->
+        </div>
+
+
+
+        <!-- Inicia uma <div> com a classe "input-arquivo" para o campo de carregamento de arquivo -->
+            <div class="input-arquivo">
+            <input type="file" id="carregar-imagem" accept="image/*">
+            <!-- Adiciona um campo de entrada para arquivos, aceitando apenas imagens -->
+        </div>
+
+
+
+        <!-- Inicia uma <div> com a classe "informacoes-perfil" para as informações do perfil -->
+        <div class="informacoes-perfil">
+            <label for="nome">Nome Completo:</label>
+            <input type="text" id="nome" placeholder="Nome do Usuário">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="usuario@email.com">
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" placeholder="(11) 99999-9999">
+        </div>
+
+
+
+        <!-- Inicia uma <div> com a classe "botoes" para os botões de ação -->
+        <div class="botoes">
+            <button id="botao-salvar">Salvar Alterações</button>
+            <button id="botao-cancelar">Cancelar</button>
+        </div>
+    </div>
+
+    <script src="perfilScript.js"></script>
+    
+</body>
+</html>

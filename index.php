@@ -29,7 +29,7 @@
                 <div id="searchMenu">
                     <label for="searchInput">Buscar informações:</label>
                     <input type="text" id="searchInput" placeholder="Digite aqui...">
-                    <button onclick="buscarInformacoes()" id="buscar">Buscar</button>
+                    <button onclick="buscarInformacoes()" id="bu,,scar">Buscar</button>
                 </div>
                 <div id="noResult" class="hidden">
                     <p>Nenhum resultado encontrado.</p>

@@ -17,6 +17,7 @@
                     <li> <a href="Calendario.php"> Calendário </a></li>
                     <li> <a href="Formulario.php"> Login </a></li>
                     <li> <a href="index.php"> Home </a></li>
+                    <li> <a href="perfil.phtml"> Perfil </a></li>
                 </ul>
             </nav>
         </div>
@@ -29,7 +30,7 @@
                 <div id="searchMenu">
                     <label for="searchInput">Buscar informações:</label>
                     <input type="text" id="searchInput" placeholder="Digite aqui...">
-                    <button onclick="buscarInformacoes()" id="bu,,scar">Buscar</button>
+                    <button onclick="buscarInformacoes()" id="buscar">Buscar</button>
                 </div>
                 <div id="noResult" class="hidden">
                     <p>Nenhum resultado encontrado.</p>

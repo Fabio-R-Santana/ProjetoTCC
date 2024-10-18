@@ -1,3 +1,9 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -8,7 +14,7 @@ body {
     box-sizing: border-box;
 }
 .container_homepage {
-    max-width: 1050px;
+    max-width: 950px;
     margin: 50px auto;
     padding: 20px;
     background-color: #fff;
@@ -33,12 +39,13 @@ body {
 .container {
     display: flex;
     height: 100%;
-    max-width: 1050px;
+    max-width: 950px;
 }
 
 .section {
     flex: 1;
     padding: 20px;
+    background-color: white;
     border: 1px solid #ccc;
     box-sizing: border-box;
     overflow-y: auto;
@@ -49,12 +56,12 @@ h2{
 .container_descricao {
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
     padding: 20px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-}
+    margin-left: 80px;
+}   
 
 .container_descricao .conteudo_container_descricao {
     flex: 1;

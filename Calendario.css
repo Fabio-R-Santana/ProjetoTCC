@@ -5,11 +5,14 @@ body {
     padding: 0; /* Remove o padding padrão */
     background-color: #ffe3e3;; /* Cor de fundo do corpo */
 }
-
+ul li.item-menu{
+    transition: .8s;
+    margin-left: -30px;
+}
 /* Estilo para o container principal */
 .container {
     width: 100%; /* Largura do container */
-    max-width: 1050px; /* Largura maxima do container */
+    max-width: 800px; /* Largura maxima do container */
     margin: 20px auto; /* Margem superior/inferior e centraliza horizontalmente */
     background-color: #fff; /* Cor de fundo do container */
     padding: 20px; /* Padding interno */

@@ -5,23 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <title>MonTask</title>
 </head>
 <body>
 
     <header>
-        <div class="logoM">
-            <img src="MontaskLOGO2.png" alt="Logo do Site">
-            <nav>
-                <ul>
-                    <li> <a href="Calendario.php"> Calendário </a></li>
-                    <li> <a href="Formulario.php"> Login </a></li>
-                    <li> <a href="index.php"> Home </a></li>
-                    <li> <a href="perfil.phtml"> Perfil </a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        <nav class="menu-lateral">
+
+            <div class="btn-expandir">
+            <i class="bi bi-list"></i>
+            </div>
+            <ul>
+                <li class="item-menu">
+                    <a href="index.php">
+                        <span class="icon"><i class="bi bi-house-door"></i></span>
+                        <span class="tct-link">Homepage</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="perfil.phtml">
+                        <span class="icon"><i class="bi bi-person-circle"></i></span>
+                        <span class="tct-link">Perfil</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="Formulario.php">
+                        <span class="icon"><i class="bi bi-person-fill-gear"></i></span>
+                        <span class="tct-link">Login</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="Calendario.php">
+                        <span class="icon"><i class="bi bi-calendar"></i></span>
+                        <span class="tct-link">Calendario</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-book"></i></span>
+                        <span class="tct-link">Turmas</span>
+                    </a>
+                </li>
+                <li class="item-menu">
+                    <a href="#">
+                        <span class="icon"><i class="bi bi-gear"></i></i></span>
+                        <span class="tct-link">Configurações</span>
+                    </a>
+                </li>
+            </ul>
+
+        </nav>
     <main>
         <div class="container_homepage">
             <div class="conteudo_container">
@@ -74,6 +108,6 @@
             <img src="MontaskLOGO2.png" alt="" srcset="">
         </section>
     </section>
-</body>
+</header>
 </body>
 </html>

@@ -9,6 +9,56 @@ body {
     box-sizing: border-box;
 }
 
+nav.menu-lateral{
+    width: 80px;
+    height: 100%;
+    background-color: black;
+    padding: 40px 0 40px 1%;
+    box-shadow: 3px 0px 0px #b30000;
+    
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    transition: .4s;
+}
+nav.menu-lateral:hover{
+    width: 300px;
+}
+.btn-expandir{
+    width: 100%;
+    padding: 10px;
+}
+.btn-expandir > i{
+    color: white;
+    cursor: pointer;
+}
+ul{
+    height: 100%;
+    list-style-type: none;
+}
+ul li.item-menu{
+    transition: .8s;
+}
+ul li.item-menu:hover{
+    background: #b30000;
+}
+ul li.item-menu a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    padding: 20px 4%;
+    display: flex;
+    margin-bottom: 20px;
+    line-height: 40px;
+}
+ul li.item-menu a .tct-link{
+    margin-left: 40px;
+}
+ul li.item-menu a .icon > i{
+    font-size: 30px;
+    margin-left: 10px;
+}
 .container {
     max-width: 800px;
     margin: 50px auto;
@@ -79,15 +129,6 @@ body {
     background-color: #800000; /* Vermelho mais escuro (hover) */
 }
 
-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #b30000;
-    padding: 10px 20px;
-    color: white;
-
-}
 .logoM img {
     height: 200px;
     width: 220px;
@@ -113,27 +154,6 @@ header {
             background-color: #ddd;
 }
         
-nav{
-    position: absolute;
-    top: 110px;
-    right: 50px;
-}
-nav li{
-    display: inline;
-    margin: 0 0 0 15px;
-}
-
-nav a{
-    text-transform: uppercase;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-    text-decoration: none;
-}
-nav a:hover{
-    color: #c71919;
-    text-decoration: underline;
-}
 
 #calendar-container {
     max-width: 800px;
@@ -233,7 +253,7 @@ h1 {
 }
 
 #proximo-mes{
-   background-image: Linear-gradient(45deg, #ff8800, #e9bc2a);
+    background-image: Linear-gradient(45deg, #ff8800, #e9bc2a);
     padding: 0,5px 0,5px;
     font-size: 24px;
     color: none;

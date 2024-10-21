@@ -1,143 +1,169 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: sans-serif;
+
+* {
+    margin: 0;                       /* Remove todas as margens */
+    padding: 0;                      /* Remove todos os espaçamentos internos */
+    box-sizing: border-box;          /* Inclui o padding e borda no tamanho total dos elementos */
+    font-family: sans-serif;         /* Define a fonte padrão como sans-serif */
 }
+
+
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe3e3;
-    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-    color: #333;
-    box-sizing: border-box;
+    font-family: Arial, sans-serif;  /* Define a fonte do corpo como Arial */
+    margin: 0;                       /* Remove margem padrão */
+    padding: 0;                      /* Remove padding padrão */
+    background-color: #ffe3e3;       /* Define cor de fundo como rosa claro */
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png"); /* Adiciona uma imagem de fundo */
+    color: #333;                     /* Define cor do texto como cinza escuro */
+    box-sizing: border-box;          /* Garante que padding e bordas estejam incluídos no tamanho do elemento */
 }
+
+
 .container_homepage {
-    max-width: 950px;
-    margin: 50px auto;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    max-width: 950px;                /* Define a largura máxima do container */
+    margin: 50px auto;               /* Centraliza o container com 50px de margem superior/inferior */
+    padding: 20px;                   /* Adiciona 20px de espaçamento interno */
+    background-color: #fff;          /* Define fundo como branco */
+    border-radius: 10px;             /* Bordas arredondadas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Aplica uma sombra leve ao redor do container */
 }
+
+
 .container_homepage h1 {
-    color: #b30000; /* Vermelho escuro */
-    margin-bottom: 20px;
-    margin-left: 70px;
-    margin-top: 100px;
+    color: #b30000;                  /* Cor do título: vermelho escuro */
+    margin-bottom: 20px;             /* Espaçamento inferior de 20px */
+    margin-left: 70px;               /* Move o título para a direita 70px */
+    margin-top: 100px;               /* Espaçamento superior de 100px */
 }
-.IMGhomepage{
-    width: 200px;
-    margin-left: 10px;
+
+
+.IMGhomepage {
+    width: 200px;                    /* Define largura da imagem como 200px */
+    margin-left: 10px;               /* Move a imagem 10px para a direita */
 }
-.conteudo_container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+
+.conteudo_container {
+    display: flex;                   /* Usa flexbox para organizar o conteúdo */
+    justify-content: center;         /* Centraliza o conteúdo horizontalmente */
+    align-items: center;             /* Centraliza o conteúdo verticalmente */
 }
+
+
 .container {
-    display: flex;
-    height: 100%;
-    max-width: 950px;
+    display: flex;                   /* Exibe o conteúdo em um layout flexível */
+    height: 100%;                    /* Altura de 100% */
+    max-width: 950px;                /* Largura máxima de 950px */
 }
+
 
 .section {
-    flex: 1;
-    padding: 20px;
-    background-color: white;
-    border: 1px solid #ccc;
-    box-sizing: border-box;
-    overflow-y: auto;
+    flex: 1;                         /* Cada seção ocupa espaço igual */
+    padding: 20px;                   /* Espaçamento interno de 20px */
+    background-color: white;         /* Fundo branco */
+    border: 1px solid #ccc;          /* Borda cinza clara */
+    box-sizing: border-box;          /* Inclui borda e padding no tamanho total */
+    overflow-y: auto;                /* Adiciona barra de rolagem se o conteúdo exceder a altura */
 }
-h2{
-    color: #b30000;
+
+
+h2 {
+    color: #b30000;                  /* Define a cor do texto como vermelho escuro */
 }
+
+
 .container_descricao {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: #fff;
-    border-radius: 10px;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-    margin-left: 80px;
-}   
+    display: flex;                   /* Layout flexível para a descrição */
+    justify-content: space-between;  /* Distribui o conteúdo uniformemente */
+    padding: 20px;                   /* Adiciona 20px de espaçamento interno */
+    background-color: #fff;          /* Fundo branco */
+    border-radius: 10px;             /* Bordas arredondadas */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Sombra suave ao redor do container */
+    margin-left: 80px;               /* Move o container para a direita 80px */
+}
+
 
 .container_descricao .conteudo_container_descricao {
-    flex: 1;
-    padding-right: 20px; /* Espaçamento entre o conteúdo e a imagem */
+    flex: 1;                         /* Faz com que o conteúdo ocupe 100% do espaço disponível */
+    padding-right: 20px;             /* Espaçamento entre o conteúdo e a imagem */
 }
+
 
 .container_descricao .imagem_container_descricao img {
-    max-width: 350px; /* Garante que a imagem não ultrapasse o tamanho do container */
-    height: auto; /* Mantém a proporção da imagem */
-}
-#voltarParaHome {
-    margin-bottom: 20px; /* Adiciona espaço abaixo do botão para separar da mensagem de nenhum resultado */
+    max-width: 350px;                /* Largura máxima de 350px */
+    height: auto;                    /* Mantém a proporção da imagem */
 }
 
-#noResult {
-    margin-top: 10px; /* Adiciona espaço acima da mensagem para separá-la do botão */
-    text-align: center; /* Centraliza o texto da mensagem */
+
+#voltarParaHome {
+    margin-bottom: 20px;             /* Espaçamento inferior de 20px */
 }
-.hidden {
-    display: none;
-}
-/* Estilos para o botão "Voltar para a Homepage" */
+
+
 button#voltarParaHome {
-    background-color: #b30000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-top: 10px;
-    transition: background-color 0.3s ease;
+    background-color: #b30000;       /* Fundo vermelho escuro */
+    color: #fff;                     /* Texto branco */
+    border: none;                    /* Remove borda */
+    padding: 10px 20px;              /* Espaçamento interno do botão */
+    border-radius: 20px;             /* Bordas arredondadas */
+    cursor: pointer;                 /* Altera o cursor para indicar que o botão é clicável */
+    font-size: 16px;                 /* Tamanho do texto */
+    margin-top: 10px;                /* Margem superior de 10px */
+    transition: background-color 0.3s ease;  /* Transição suave ao mudar a cor do fundo */
 }
+
 
 button#voltarParaHome:hover {
-    background-color: #8c0000;
+    background-color: #8c0000;       /* Cor de fundo ao passar o mouse: vermelho mais escuro */
 }
 
-/* Estilos para o menu de busca */
+
 #searchMenu {
-    text-align: center;
-    margin-top: 20px;
+    text-align: center;              /* Centraliza o menu de busca */
+    margin-top: 20px;                /* Adiciona margem superior de 20px */
 }
+
 
 #searchMenu label {
-    font-size: 16px;
-    font-weight: bold;
-    color: #555;
+    font-size: 16px;                 /* Tamanho da fonte */
+    font-weight: bold;               /* Texto em negrito */
+    color: #555;                     /* Cor do texto: cinza médio */
 }
+
 
 #searchInput {
-    padding: 10px;
-    margin-top: 5px;
-    width: 300px;
-    border: 1px solid #ccc;
-    border-radius: 20px;
-    font-size: 14px;
+    padding: 10px;                   /* Espaçamento interno de 10px */
+    margin-top: 5px;                 /* Margem superior de 5px */
+    width: 300px;                    /* Largura de 300px */
+    border: 1px solid #ccc;          /* Borda cinza clara */
+    border-radius: 20px;             /* Bordas arredondadas */
+    font-size: 14px;                 /* Tamanho da fonte */
 }
+
 
 #searchInput:focus {
-    outline: none;
-    border-color: #b30000;
+    outline: none;                   /* Remove a borda padrão ao focar */
+    border-color: #b30000;           /* Muda a cor da borda para vermelho escuro */
 }
+
 
 button#buscar {
-    background-color: #b30000;
-    color: #fff;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 20px;
-    cursor: pointer;
-    font-size: 16px;
-    margin-left: 10px;
-    transition: background-color 0.3s ease;
+    background-color: #b30000;       /* Fundo vermelho escuro */
+    color: #fff;                     /* Texto branco */
+    border: none;                    /* Remove borda */
+    padding: 10px 20px;              /* Espaçamento interno do botão */
+    border-radius: 20px;             /* Bordas arredondadas */
+    cursor: pointer;                 /* Altera o cursor para indicar clicável */
+    font-size: 16px;                 /* Tamanho do texto */
+    margin-left: 10px;               /* Margem à esquerda de 10px */
+    transition: background-color 0.3s ease;  /* Transição suave ao mudar a cor do fundo */
 }
 
+
 button#buscar:hover {
-    background-color: #8c0000;
+    background-color: #8c0000;       /* Cor de fundo ao passar o mouse: vermelho mais escuro */
+}
+
+
+.hidden {
+    display: none;                   /* Esconde o elemento */
 }

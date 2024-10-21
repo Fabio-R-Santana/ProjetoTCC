@@ -92,7 +92,7 @@ h2 {
 }
 
 .informacoes-perfil input {
-    width: 100%;
+    width: 300px;
     padding: 10px;
     border-radius: 10px;
     border: 2px solid #ccc;

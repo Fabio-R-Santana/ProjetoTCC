@@ -24,7 +24,7 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="perfil.phtml">
+                    <a href="perfil.php">
                         <span class="icon"><i class="bi bi-person-circle"></i></span>
                         <span class="tct-link">Perfil</span>
                     </a>

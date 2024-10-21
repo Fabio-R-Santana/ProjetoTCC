@@ -1,56 +1,65 @@
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background-color: #ffe3e3;
-    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");
-    color: #333;
+    font-family: Arial, sans-serif;  /* Define a fonte do corpo do documento como Arial, com sans-serif como fallback */
+    margin: 0;                      /* Remove a margem padrão do navegador */
+    padding: 0;                     /* Remove o espaçamento interno padrão do navegador */
+    background-color: #ffe3e3;      /* Define a cor de fundo do corpo como um tom claro de rosa */
+    background-image: url("https://www.transparenttextures.com/patterns/cartographer.png");  /* coloca a textura do fundo */
+    color: #333;                    /* Define a cor do texto como um cinza escuro */
 }
-ul li.item-menu{
-    transition: .8s;
-    margin-left: -30px;
+
+ul li.item-menu {
+    transition: .8s;                /* Adiciona uma transição suave de 0.8 segundos para qualquer mudança de estilo */
+    margin-left: -30px;             /* Move o item do menu 30 pixels para a esquerda */
 }
+
 .container {
-    max-width: 600px;
-    margin: 50px auto;
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;               /* Define a largura máxima do container como 600px */
+    margin: 50px auto;              /* Centraliza o container horizontalmente e adiciona 50px de margem superior/inferior */
+    background-color: #fff;         /* Define o fundo do container como branco */
+    padding: 20px;                  /* Adiciona 20px de espaçamento interno */
+    border-radius: 10px;            /* Arredonda os cantos do container com um raio de 10px */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);  /* Aplica uma leve sombra ao redor do container */
 }
+
 h2 {
-    text-align: center;
+    text-align: center;  /* Centraliza o texto dos títulos `h2` */
 }
+
 .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Adiciona um espaçamento inferior de 20px entre os elementos de formulário */
 }
+
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    display: block;                 /* Faz com que o rótulo ocupe a largura total disponível */
+    font-weight: bold;              /* Define o texto dos rótulos como negrito */
+    margin-bottom: 5px;             /* Adiciona um espaçamento inferior de 5px abaixo dos rótulos */
 }
+
 input[type="text"], input[type="email"], select {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    box-sizing: border-box;
+    width: 100%;                    /* Define a largura dos campos para 100%  */
+    padding: 10px;                  /* Adiciona 10px de espaçamento interno */
+    border: 1px solid #ccc;         /* Define uma borda de 1px com cor cinza */
+    border-radius: 5px;             /* Arredonda as bordas dos campos em 5px */
+    box-sizing: border-box;         /* Garante que o padding e a borda sejam incluídos na largura total do elemento */
 }
+
 .btn-next {
-    display: block;
-    width: 100%;
-    padding: 10px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+    display: block;                 /* Define o botão como um bloco, ocupando a largura total disponível */
+    width: 100%;                    /* Define a largura do botão como 100% do container pai */
+    padding: 10px;                  /* Adiciona 10px de espaçamento interno ao botão */
+    background-color: #007bff;      /* Define o fundo do botão em azul */
+    color: #fff;                    /* Define a cor do texto do botão como branco */
+    border: none;                   /* Remove qualquer borda do botão */
+    border-radius: 5px;             /* Arredonda os cantos do botão em 5px */
+    cursor: pointer;                /* Altera o cursor para indicar que o botão é clicável */
 }
+
 .btn-next:hover {
-    background-color: #0056b3;
+    background-color: #0056b3;      /* Muda o fundo do botão para um azul mais escuro quando o mouse passa em cima dele */
 }
+
 .logo {
-    display: block;
-    margin: 0 auto 20px;
-    max-width: 200px;
+    display: block;                 /* Faz com que o logo seja exibido como um bloco */
+    margin: 0 auto 20px;            /* Centraliza o logo horizontalmente e adiciona 20px de margem inferior */
+    max-width: 200px;               /* Define a largura máxima do logo como 200px */
 }

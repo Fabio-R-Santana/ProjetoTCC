@@ -1,15 +1,27 @@
 <?php
-     if(isset($_POST['submit']))
+    session_start();
+    include_once('config.php');
+    // print_r($_SESSION);
+    if((!isset($_SESSION['email']) == true) and (!isset($_SESSION['senha']) == true))
+    {
+        unset($_SESSION['email']);
+        unset($_SESSION['senha']);
+        header('Location: login.php');
+    }
+    $logado = $_SESSION['email'];
+
+    if(isset($_POST['submit']))
      { 
 
         include_once('config.php');
         $nome = $_POST['nome'];
         $email = $_POST['email'];
+        $senha = $_POST['senha'];
         $telefone = $_POST['telefone'];
 
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,telefone) VALUES ('$nome','$email','$telefone')");
+        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,telefone) VALUES ('$nome','$email','$senha','$telefone')");
 
-        header('Location: perfil.php');
+        header('Location: login.php');
 
 
         //print_r('Nome: ' . $_POST['nome']);
@@ -20,7 +32,7 @@
         //print_r('<br>');
  
         
-     }
+    }
 ?>
 <!DOCTYPE html>
 
@@ -137,8 +149,8 @@
 
             <!-- Inicia uma <div> com a classe "botoes" para os botões de ação -->
             <div class="botoes">
-                <input type="submit" id="botao-salvar" name="submit">
-                <button >Salvar Alterações</button>
+                <input type="submit" id="botao-salvar" name="submit" class="botao-salvar">
+                <button>Salvar Alterações</button>
                 <button id="botao-cancelar">Cancelar</button>
             </div>
         </div>

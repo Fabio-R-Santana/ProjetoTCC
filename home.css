@@ -62,7 +62,6 @@ body {
     background-color: white;         /* Fundo branco */
     border: 1px solid #ccc;          /* Borda cinza clara */
     box-sizing: border-box;          /* Inclui borda e padding no tamanho total */
-    overflow-y: auto;                /* Adiciona barra de rolagem se o conteúdo exceder a altura */
 }
 
 
@@ -78,7 +77,7 @@ h2 {
     background-color: #fff;          /* Fundo branco */
     border-radius: 10px;             /* Bordas arredondadas */
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);  /* Sombra suave ao redor do container */
-    margin-left: 80px;               /* Move o container para a direita 80px */
+    margin-left: 80px;             /* Move o container para a direita 80px */
 }
 
 

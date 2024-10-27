@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="Formulario.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+  <!-- Link para a biblioteca de ícones bootstrap icons -->
 </head>
 <body>
 <header>
@@ -41,17 +41,17 @@
               </a>
           </li>
           <li class="item-menu">
-              <a href="#">
+              <a href="Turmas.php">
                   <span class="icon"><i class="bi bi-book"></i></span>
                   <span class="tct-link">Turmas</span>
               </a>
           </li>
           <li class="item-menu">
-              <a href="#">
-                  <span class="icon"><i class="bi bi-gear"></i></i></span>
-                  <span class="tct-link">Configurações</span>
-              </a>
-          </li>
+                <a href="logout.php">
+                    <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                    <span class="tct-link">Logout</span>
+                </a>
+            </li>
       </ul>
   </nav>
 </header>
@@ -67,11 +67,8 @@
             <input type="submit" value="Entrar" name="submit">
         </form>
         <div class="register-option">
-            <p>Não possui uma conta? <a href="cadastro.html">Clique aqui para cadastrar</a></p>
+            <p>Não possui uma conta? <a href="Cadastro.php">Clique aqui para cadastrar</a></p>
         </div>
-    </div>
-    <div class="botao-sair">
-        <a href="logout.php" class="texto-logout">Sair</a>
     </div>
 </body>
 </html>

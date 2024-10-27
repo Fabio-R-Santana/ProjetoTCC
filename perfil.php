@@ -21,7 +21,7 @@
 
         $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,telefone) VALUES ('$nome','$email','$senha','$telefone')");
 
-        header('Location: login.php');
+        header('Location: perfil.php');
 
 
         //print_r('Nome: ' . $_POST['nome']);
@@ -49,7 +49,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <!-- Link para a biblioteca de ícones Font Awesome -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-
+    <!-- Link para a biblioteca de ícones bootstrap icons -->
 </head>
 <body>
 <header>
@@ -84,15 +84,15 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="Turmas.php">
                         <span class="icon"><i class="bi bi-book"></i></span>
                         <span class="tct-link">Turmas</span>
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><i class="bi bi-gear"></i></i></span>
-                        <span class="tct-link">Configurações</span>
+                    <a href="logout.php">
+                        <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                        <span class="tct-link">Logout</span>
                     </a>
                 </li>
             </ul>

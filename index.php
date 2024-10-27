@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="home.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Link para a biblioteca de ícones bootstrap icons -->
     <title>MonTask</title>
 </head>
 <body>
@@ -42,19 +43,18 @@
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
+                    <a href="Turmas.php">
                         <span class="icon"><i class="bi bi-book"></i></span>
                         <span class="tct-link">Turmas</span>
                     </a>
                 </li>
                 <li class="item-menu">
-                    <a href="#">
-                        <span class="icon"><i class="bi bi-gear"></i></i></span>
-                        <span class="tct-link">Configurações</span>
+                    <a href="logout.php">
+                        <span class="icon"><i class="bi bi-box-arrow-left"></i></span>
+                        <span class="tct-link">Logout</span>
                     </a>
                 </li>
             </ul>
-
         </nav>
     <main>
         <div class="container_homepage">

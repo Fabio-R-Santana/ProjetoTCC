@@ -1,0 +1,142 @@
+body {
+    font-family: sans-serif; /* Define a fonte como sans-serif */
+    margin: 0; /* Remove a margem padrão do body */
+    padding: 0; /* Remove o preenchimento padrão do body */
+    background-color: #fff; /* Define a cor de fundo como branca */
+}
+ul li.item-menu{
+    transition: .8s;
+    margin-left: -30px;
+}
+
+.container {
+    display: grid; /* Utiliza o layout de grid para organizar os itens */
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Cria colunas que se adaptam ao tamanho da tela, com mínimo de 300px */
+    gap: 15px; /* Define um espaço de 15px entre os itens do grid */
+    padding: 20px; /* Adiciona um preenchimento de 20px ao redor do container */
+    max-width: 1200px; /* Define uma largura máxima de 1200px para o container */
+    margin: 0 auto; /* Centraliza o container horizontalmente */
+}
+
+.professor-container {
+    background-color: #fff; /* Define a cor de fundo como branca para cada professor */
+    border: 2px solid #ff0000; /* Borda vermelha de 2px ao redor de cada container de professor */
+    border-radius: 10px; /* Arredonda os cantos da borda em 10px */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra leve para dar profundidade */
+    overflow: hidden; /* Esconde qualquer conteúdo que ultrapasse os limites do container */
+    display: flex; /* Utiliza flexbox para organizar o conteúdo */
+    flex-direction: column; /* Alinha os itens na direção vertical */
+    justify-content: space-between; /* Distribui o espaço restante entre os itens */
+    padding: 10px; /* Adiciona um preenchimento de 10px dentro de cada container */
+    min-height: 150px; /* Define uma altura mínima de 150px para cada container */
+}
+
+.header-container {
+    display: flex; /* Utiliza flexbox para alinhar o cabeçalho */
+    align-items: center; /* Alinha os itens do cabeçalho verticalmente no centro */
+}
+
+.profile-pic {
+    width: 50px; /* Define a largura da imagem do perfil como 50px */
+    height: 50px; /* Define a altura da imagem do perfil como 50px */
+    border-radius: 50%; /* Torna a imagem do perfil circular */
+    overflow: hidden; /* Esconde o conteúdo que ultrapassa os limites do círculo */
+    margin-right: 15px; /* Adiciona um espaço à direita da imagem */
+    border: 2px solid #000; /* Borda preta de 2px ao redor da imagem do perfil */
+}
+
+.profile-pic img {
+    width: 100%; /* Faz a imagem ocupar 100% da largura do seu container */
+    height: 100%; /* Faz a imagem ocupar 100% da altura do seu container */
+    object-fit: cover; /* Cobre a área do container da imagem, mantendo a proporção */
+}
+
+.professor-info h3 {
+    margin: 0; /* Remove a margem padrão do título */
+    font-size: 18px; /* Define o tamanho da fonte do título como 18px */
+    color: #000; /* Define a cor do texto como preto */
+}
+
+.professor-info p {
+    margin: 0; /* Remove a margem padrão do parágrafo */
+    color: #555; /* Define a cor do texto do parágrafo como um cinza escuro */
+}
+
+.action-btn {
+    background-color: #ff0000; /* Define a cor de fundo do botão como vermelho */
+    color: white; /* Define a cor do texto do botão como branco */
+    border: none; /* Remove a borda padrão do botão */
+    border-radius: 5px; /* Arredonda os cantos do botão em 5px */
+    padding: 8px 12px; /* Adiciona um preenchimento de 8px vertical e 12px horizontal */
+    cursor: pointer; /* Muda o cursor para uma mão ao passar sobre o botão */
+    align-self: flex-end; /* Alinha o botão no final do container do professor */
+}
+
+.action-btn:hover {
+    background-color: #cc0000; /* Altera a cor de fundo do botão para um vermelho mais escuro ao passar o mouse */
+}
+.headerzao {
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+}
+
+.headerzao h1 {
+    margin: 0;
+}
+
+.headerzao button {
+    margin-top: 10px;
+    padding: 10px 15px;
+    font-size: 16px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.professor-container {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin: 10px;
+    padding: 15px;
+    text-align: center;
+    width: 200px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}

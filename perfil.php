@@ -43,6 +43,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="perfilCSS.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="header.css">
     <title>Perfil do Usuário</title>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&display=swap">
     <!-- Link para a fonte "Open Sans" hospedada no Google Fonts -->

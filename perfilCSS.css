@@ -117,6 +117,16 @@ h2 {
     transition: background-color 0.3s ease;
     font-weight: 600;
 }
+.botao-salvar{
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 20px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+}
 
 #botao-salvar {
     background-color: #f00;

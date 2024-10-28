@@ -9,7 +9,13 @@
         header('Location: login.php');
     }
     $logado = $_SESSION['email'];
+
+    // Carregar eventos da sessão
+    $eventosDaSessao = isset($_SESSION['eventos']) ? $_SESSION['eventos'] : [];
+
+    
 ?>
+
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -92,7 +98,7 @@
        </div>
 
        <!-- Formulário para criar ou editar eventos -->
-       <div class="formulario-evento" id="formularioEvento">
+       <div class="formulario-evento" id="formularioEvento" method="POST" action="salvar_evento.php">
            <h3>Criar Novo Evento</h3>
            <form>
                <!-- Campo para o título do evento -->
@@ -118,6 +124,12 @@
 
    <!-- Link para o arquivo JavaScript -->
    <script src="Calendario.js"></script>
+   <script>
+    // Adicione isso após declarar a variável 'eventos' no JavaScript
+    let eventosDaSessao = <?php echo json_encode($eventosDaSessao); ?>;
 
+    // Combine os eventos existentes com os eventos da sessão
+    eventos = [...eventos, ...eventosDaSessao];
+   </script>
 </body>
 </html>

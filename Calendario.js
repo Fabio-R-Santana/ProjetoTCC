@@ -181,3 +181,4 @@ proximoMes.addEventListener('click', () => {
 
 // Gera o calendário inicial com o mês e ano atuais
 gerarCalendario(anoAtual, mesAtual); // Chama a função para gerar o calendário inicial
+

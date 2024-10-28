@@ -16,7 +16,9 @@ ul li.item-menu{
     background-color: white;
     border-radius: 20px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    margin-top: 10px;
+    padding: 40px;
+    width: 400px;
     max-width: 600px;
     text-align: center;
     position: relative;
@@ -107,44 +109,21 @@ h2 {
 }
 
 /* Estilos dos botões */
-.botoes button {
+.botao-editar{
+    margin-top: 15px;
     width: 48%;
     padding: 10px;
-    border: none;
     border-radius: 20px;
     font-size: 16px;
     cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-}
-.botao-salvar{
-    width: 48%;
-    padding: 10px;
-    border: none;
-    border-radius: 20px;
-    font-size: 16px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    font-weight: 600;
-}
-
-#botao-salvar {
     background-color: #f00;
     color: #fff;
+    font-weight: 600;
+}
+.botao-editar:hover{
+    background-color: rgb(220, 0, 0);
 }
 
-#botao-salvar:hover {
-    background-color: #cc0000;
-}
-
-#botao-cancelar {
-    background-color: #ccc;
-    color: #333;
-}
-
-#botao-cancelar:hover {
-    background-color: #999;
-}
 
 /* Ajustes responsivos */
 @media (max-width: 768px) {

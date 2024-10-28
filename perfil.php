@@ -133,30 +133,22 @@
 
             <!-- Inicia uma <div> com a classe "informacoes-perfil" para as informações do perfil -->
             <div class="informacoes-perfil">
-                <label for="nome">Nome Completo:</label>
                 <?php 
                     while($user_data = mysqli_fetch_assoc($result)){
+                        print_r('<label for="nome">Nome Completo:</label>');
                         print_r($user_data['nome']);
                         print_r('<label for="email">  Email:  </label>');
                         print_r($user_data['email']);
                         print_r('<label for="telefone">Telefone:</label>');
                         print_r($user_data['telefone']);
+                        print_r('<label for="permissao">Cargo:</label>');
+                        print_r($user_data['permissao']);
                     }
                 ?>
-                
-                <?php 
-                       
-                ?>
-                
             </div>
-
-
-
             <!-- Inicia uma <div> com a classe "botoes" para os botões de ação -->
             <div class="botoes">
-                <input type="submit" id="botao-salvar" name="submit" class="botao-salvar">
-                <button>Salvar Alterações</button>
-                <button id="botao-cancelar">Cancelar</button>
+                <button class="botao-editar">Editar informações</button>
             </div>
         </div>
     </form>

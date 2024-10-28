@@ -83,7 +83,7 @@ h1 {
     padding: 10px; /* Padding interno */
     border-radius: 4px; /* Bordas arredondadas */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra do mural */
-    max-height: 600px; /* Altura máxima */
+    max-height: 300px; /* Altura máxima */
     overflow-y: auto; /* Adiciona barra de rolagem vertical se necessário */
 }
 

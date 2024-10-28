@@ -10,28 +10,23 @@
     }
     $logado = $_SESSION['email'];
 
-    if(isset($_POST['submit']))
-     { 
+    if((isset($_SESSION['email']) == true) and (isset($_SESSION['senha']) == true)){
+        $email = $_SESSION['email'];
+        $senha = $_SESSION['senha'];
 
-        include_once('config.php');
-        $nome = $_POST['nome'];
-        $email = $_POST['email'];
-        $senha = $_POST['senha'];
-        $telefone = $_POST['telefone'];
-
-        $result = mysqli_query($conexao, "INSERT INTO usuarios(nome,email,senha,telefone) VALUES ('$nome','$email','$senha','$telefone')");
-
-        header('Location: perfil.php');
-
-
-        //print_r('Nome: ' . $_POST['nome']);
-        // print_r('<br>');
-        //print_r('Email: ' . $_POST['email']);
+        //print_r('Email: ' . $email);
         //print_r('<br>');
-        //print_r('Telefone: ' . $_POST['telefone']);
+        //print_r('Senha: ' . $senha);
+
+        $sql = "SELECT * FROM usuarios WHERE email = '$email' and senha = '$senha'";
+
+        $result = $conexao->query($sql);
+
         //print_r('<br>');
- 
-        
+        //print_r($result);
+
+    }else{
+        header('location: formulario.php');
     }
 ?>
 <!DOCTYPE html>
@@ -139,11 +134,20 @@
             <!-- Inicia uma <div> com a classe "informacoes-perfil" para as informações do perfil -->
             <div class="informacoes-perfil">
                 <label for="nome">Nome Completo:</label>
-                <input type="text" id="nome" placeholder="Nome do Usuário" name="nome">
-                <label for="email">Email:</label>
-                <input type="email" id="email" placeholder="usuario@email.com" name="email">
-                <label for="telefone">Telefone:</label>
-                <input type="tel" id="telefone" placeholder="(11) 99999-9999" name="telefone">
+                <?php 
+                    while($user_data = mysqli_fetch_assoc($result)){
+                        print_r($user_data['nome']);
+                        print_r('<label for="email">  Email:  </label>');
+                        print_r($user_data['email']);
+                        print_r('<label for="telefone">Telefone:</label>');
+                        print_r($user_data['telefone']);
+                    }
+                ?>
+                
+                <?php 
+                       
+                ?>
+                
             </div>
 
 

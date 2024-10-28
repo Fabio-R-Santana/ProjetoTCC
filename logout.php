@@ -5,4 +5,3 @@
     unset($_SESSION['senha']);
     header('Location: login.php');
     
-?>        
